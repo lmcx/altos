@@ -1,0 +1,13 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        - hackrf
+        - gnuradio
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - dk.gqrx.gqrx
+
